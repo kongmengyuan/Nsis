@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+/* 初始化 */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	line-height:24px;
+	color:#333;
+	background: #f6f6f6;
+}
+a{
+	text-decoration: none; 
+	color:#333
+}
+a:visited{
+	color:#333
+}
+a:hover{
+	text-decoration: underline;
+}
+h1,h2,h3{
+	font-weight:normal;
+	margin:0;padding:0;
+}
+li {
+	list-style: none;
+}
+img{
+	border:none;
+	vertical-align:middle;
+}
+input{
+	border:none;
+}
+/*滚动条*/
+body{
+	overflow-x:hidden;
+	overflow-y:scroll;
+	scrollbar-arrow-color: #174055;
+	scrollbar-base-color: #175060;
+	scrollbar-face-color: #175060;
+	scrollbar-shadow-color: #175060;
+	scrollbar-highlight-color: #175060;
+	scrollbar-3dlight-color: #175060;
+	scrollbar-darkshadow-color: #175060;
+	scrollbar-track-color:#174055;
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: rgba(25, 147, 147, 0.1);
+	}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba(25, 147, 147, 0.2);
+}
+/*内容开始*/
+.container{
+	/*width:500px;*/
+	width:94%;
+	margin:0 auto;
+	position:relative;
+}
+.chat,.chat-main{
+	width:100%;
+}
+/*聊天日期*/
+.chat-date{
+	width:100%;
+	height:20px;
+	clear:both;
+	padding:10px 0;
+}
+.rightside .chat-date{
+	text-align:right;
+}
+/* 聊天内容开始 */
+.chat-main li{
+	float:left;
+}
+.chat-main li:nth-child(2){
+	max-width: 350px;
+}
+/* 聊天框（气泡） */
+.chat-box{
+	background:#9eea6a;
+	border-radius:10px;
+	position:relative;
+	border:solid 1px #ececec;
+}
+
+.leftside .chat-box{
+	margin-left:8px;
+	background: #fff;
+}
+.rightside .chat-box{
+	margin-right:8px;
+}
+/* 聊天内容 */
+.chat-box p{
+	max-width:380px;
+	text-align:center;
+	margin:10px;
+	position: relative;
+}
+.chat-box .chat-cxt{
+	min-width:20px;
+	text-align: left;
+}
+.rightside li{
+	float:right;
+}
+.leftside .chat-box .icon-tir{
+	position:absolute;
+	left:-6px;
+	top:12px;
+}
+.rightside .chat-box .icon-tir{
+	position:absolute;
+	right:-6px;
+	top:12px;
+}
+/* 昵称 */
+.chat-name{
+	margin:0 0 0 10px;
+	padding:0;
+}
+.rightside .chat-name{
+	text-align:right;
+	margin:0 10px 0 0;
+}
+/* 图片内容 */
+.chat-pic{
+	border-radius: none;
+	border: none;
+}
+.chat-pic p{
+	width:106px;
+	height:106px;
+	margin: 0;
+	background:url(../images/pic01.png) no-repeat 50% 50%;
+}
+/* 语音 */
+.voice-box{
+	text-align: center;
+	vertical-align: middle;
+}
+.voice-box p {
+	width: 80px;
+	text-align:left;
+	padding: 0 0 0 10px;
+}
+.rightside .voice-box p {
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+.voice-time{
+	display:block;
+	height:14px;
+	line-height:14px;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	margin-top:-7px;
+	left:-30px;
+}
+.leftside .voice-time{
+	right:-200px;
+}
+/* 视频内容 */
+.chat-vedio{
+	background: #fff;
+	padding: 0;
+}
+.chat-vedio p img{
+	padding: 0 5px 0 0;
+	cursor: pointer;
+}
+/**/
+.leftside .vedio-box{
+	background: none;
+}
+/* 表情内容 */
+.emoji{
+	border-radius: none;
+	border: none;
+}
+.emoji p{
+	width:105px;
+	height:105px;
+	background:url(../images/biaoqing.gif) no-repeat 50% 50%;
+	background-size:100%;
+	margin:0;
+}
+/* 链接内容 */
+.chat-link{
+	width:300px;
+}
+.chat-link p{
+	width:280px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.chat-link a{
+	color: #3798e9;
+	display: block;
+	word-break:break-all;
+	text-align: left;
+}
+.chat-link a .icon_link{
+	padding: 0 5px 0 0;
+}
+/* 个人名片 */
+.chat-card-box{
+	width:235px;
+	 background:#fff;
+	 overflow:hidden;
+}
+.chat-card{
+	padding:0 0 6px 0;
+	border-bottom:solid 1px #ececec;
+	margin-bottom: 10px;
+}
+.chat-card-box p{
+	text-align:left;
+}
+.rightside .chat-card{
+	text-align: right;
+}
+.chat-card-box .chat-card-info{
+	margin:0 10px 0 0;
+}
+.chat-card-box .chat-card-info span{
+	font-size:16px;
+}
+.chat-card-box .chat-card-info .nicheng{
+	color:#b8b8b8;
+	margin:10px 0 0 0 10px;
+	font-size: 14px;
+}
+/* 红包 */
+.chat-main .chat-hb{
+	width:222px;
+	background:#f99d3a;
+	position: relative;
+}
+.chat-main .chat-hb p{
+	width: 150px;
+	height:14px;
+	line-height: 14px;
+	text-align:left;
+	color:#faf0db;
+	position: relative;
+	margin:15px 0 15px 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.chat-main .chat-hb div{ 
+	height: 28px;
+	position: absolute;
+	bottom: 0px;
+	padding: 0 15px;
+	text-align:left;
+	color:#b9b9b9;
+	position: relative;
+	background: #fafafa;
+	width: 192px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+}
+.chat-main .chat-hb div .hb-icon{
+	position: absolute;
+	right: 10px;
+	top:6px;
+}
+.hb-pic01{
+	position: absolute;
+	left: 15px;
+	top:15px;
+}
+/* 恢复（删除）的内容 */
+.delete  .chat-box{
+	background: url(../images/watermark_0.png) 0 0;
+}
+
+.delete-left  .chat-box{
+	background: url(../images/watermark.png) 0 0;
+}
+.delete .chat-hb,.delete-left .chat-hb{
+	background:#f99d3a;
+}
+.delete .chat-card-box,.delete-left .chat-card-box,.delete-left .voice-box,.delete-left .chat-vedio{
+	background: #fff;
+}
+.delete .chat-vedio,.delete .voice-box{
+	background: #9eea6a;
+}
+*/
+/*无法打开（损坏）的图片以及其他正常图片内容去掉边框和背景*/
+.leftside.chat-pic,.rightside.chat-pic{
+	background:none;
+	border: none;
+}
+.leftside .vedio-box,.rightside .vedio-box{
+	background: none;
+	border: none;
+}
+.leftside .chat-pic-damage,.rightside .chat-pic-damage,.leftside .chat-vedio-damage,.rightside .chat-vedio-damage{
+	background: none;
+	border: none;
+}
+.leftside .emoji,.rightside .emoji{
+	background: none;
+	border: none;
+
+}

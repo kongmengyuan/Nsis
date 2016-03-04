@@ -1,0 +1,28 @@
+打包成这些标题:
+程序图标不用变，程序名字(程序在“任务栏”上的快捷名字)，程序顶部的名字(顶部是Image,正式版header_01.png 免费版header_02.png,需要美工作图)，安装包名字，安装包快捷方式 对应变化
+图片目录：PDF转换器_打包成多个名称
+
+图片处理方法：使用“A_打包成多个名称整理.xlsx”,对美工处理过的psd进行用编程方法处理,POS的替换方法,详细操作方法参考"F:\Work_Hudun\安装包制作\Nsis\图片替换"
+使用方法：把这个目录的文件名使用“D_签名编译再签名.BAT”在编译时替换到基本目录里面去,比如“打包成多个名称\中_Nsis安装包\01、迅捷PDF转换器\license.rtf”拷贝替换到"license\license.rtf",同理,图片也是替换到上级目录的对应目录里面
+
+01、迅捷PDF转换器
+02、pdf转换器
+03、pdf转换成word转换器
+04、word转换成pdf转换器
+05、pdf转换成jpg转换器
+06、jpg转换成pdf转换器
+07、pdf转换成ppt转换器
+08、ppt转换成pdf转换器
+
+09、pdf转换成txt转换器
+10、txt转换成pdf转换器
+11、pdf转换成html转换器
+12、pdf转换成excel转换器
+13、excel转换成pdf转换器
+
+14、excel转换成word转换器
+15、ppt转换成word转换器
+16、word转换成excel转换器
+17、pdf to word converter
+
+18、好用PDF转换器
